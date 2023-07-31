@@ -1,0 +1,26 @@
+<html>
+<head>
+   <link rel="stylesheet" href="css.css"/>
+   <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+   Integrity = "sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+   crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+</head>
+<body>
+   <h2>USING THE <i> DARK MODE </i>MY NAME IS ALIAKBAR I AM YOUTUBER </h2>
+   <p>I WELL MAKE A RESPONSIVE WEBSITE</p>
+   <label class = "toggleButton">
+      <input type = "checkbox" id = "toggle">
+      <div class = "roundButton circle" ></div>
+   </label>
+   <script>
+      // If the input checkbox is checked, activate dark mode by adding dark-class to the body
+      $('#toggle').change(() => {
+         if ($('#toggle').is(":checked")) {
+            $("body").addClass("dark-class");
+         } else {
+            $("body").removeClass("dark-class")
+         }
+      })
+   </script>
+</body>
+</html>
